@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
+import Header from "./components/header/header.js"
+import Front from "./components/front/front"
+import Footer from "./components/footer/footer.js"
+import Background from './components/front/background/background.js';
 import './App.scss';
+
 
 class App extends Component {
   constructor() {
@@ -19,11 +24,11 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <header>
-          <div className="logo">
-            <img src="../media/logo.png" alt="logo"></img>
-          </div>
-        </header>
+        
+        {/* <Header />  */}
+        <Background />
+        <Front /> 
+        {/* <Footer />  */}
       </div>
     )
   }

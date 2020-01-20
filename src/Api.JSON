@@ -1,0 +1,108 @@
+[
+    {
+        "name": "CARLMARTINS",
+        "id": 1,
+        "track": [
+            {
+                "title": "1984",
+                "about": [
+                    {
+                        "name": "We Were Young"
+                    },
+                    {
+                        "artist": "CARLMARTINS"
+                    },
+                    {
+                        "year": 2017
+                    },
+                    {
+                        "artwork": "https://funkadelphia.files.wordpress.com/2012/09/odesza-summers-gone-lp.jpg"
+                    },
+                    {
+                        "duration": 192
+                    },
+                    {
+                        "source": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3"
+                    },  
+                    {
+                        "buyUrl": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3"
+                    },  
+                    {
+                        "description": "\n\tThe King of Limbs is the eighth studio album by English rock band Radiohead, produced by Nigel Godrich. It was self-released on 18 February 2011 as a download in MP3 and WAV formats, followed by physical CD and 12\" vinyl releases on 28 March, a wider digital release via AWAL, and a special \"newspaper\" edition on 9 May 2011. The physical editions were released through the band's Ticker Tape imprint on XL in the United Kingdom, TBD in the United States, and Hostess Entertainment in Japan.\n      "
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "CARLMARTINS",  
+        "id": 2,
+        "track": [
+            {
+                "title": "Elda Tullinge",
+                "about": [
+                    {
+                        "name": "We Were Young"
+                    },
+                    {
+                        "artist": "Odesza"
+                    },
+                    {
+                        "year": 2012
+                    },
+                    {
+                        "artwork": "https://funkadelphia.files.wordpress.com/2012/09/odesza-summers-gone-lp.jpg"
+                    },
+                    {
+                        "duration": 192
+                    },
+                    {
+                        "source": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3"
+                    },   
+                    {
+                        "buyUrl": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3"
+                    },  
+                  
+                    {
+                        "description": "\n\tThe King of Limbs is the eighth studio album by English rock band Radiohead, produced by Nigel Godrich. It was self-released on 18 February 2011 as a download in MP3 and WAV formats, followed by physical CD and 12\" vinyl releases on 28 March, a wider digital release via AWAL, and a special \"newspaper\" edition on 9 May 2011. The physical editions were released through the band's Ticker Tape imprint on XL in the United Kingdom, TBD in the United States, and Hostess Entertainment in Japan.\n      "
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "CARLMARTINS",
+        "id": 3,
+        "track": [
+            {
+                "title": "Elda Tullinge",
+                "about": [
+                    {
+                        "name": "We Were Young"
+                    },
+                    {
+                        "artist": "Odesza"
+                    },
+                    {
+                        "year": 2012
+                    },
+                    {
+                        "artwork": "https://funkadelphia.files.wordpress.com/2012/09/odesza-summers-gone-lp.jpg"
+                    },
+                    {
+                        "duration": 192
+                    },
+                    {
+                        "source": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3"
+                    },  
+                    {
+                        "buyUrl": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/wwy.mp3"
+                    },  
+                    {
+                        "description": "\n\tThe King of Limbs is the eighth studio album by English rock band Radiohead, produced by Nigel Godrich. It was self-released on 18 February 2011 as a download in MP3 and WAV formats, followed by physical CD and 12\" vinyl releases on 28 March, a wider digital release via AWAL, and a special \"newspaper\" edition on 9 May 2011. The physical editions were released through the band's Ticker Tape imprint on XL in the United Kingdom, TBD in the United States, and Hostess Entertainment in Japan.\n      "
+                    }
+                ]
+            }
+        ]
+    }
+]
