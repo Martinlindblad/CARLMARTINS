@@ -14,7 +14,8 @@ class Time extends Component {
 
     render() {
         return (
-            <div className="Timestamps">
+            <div className="timestamps">
+                <div className="timestamps-bkg"></div>
                 <div className="Time Time--current">{this.convertTime(this.props.currentTime)}</div>
                 <div className="Time Time--total">{this.props.duration}</div>
             </div>

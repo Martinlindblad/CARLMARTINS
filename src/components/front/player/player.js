@@ -12,9 +12,11 @@ class Player extends Component {
         this.state = {
             playStatus: false,
             currentTime: 0,
-            producer: "CARLMARTINS",
-            id: 1,
+            
+            
             track: {
+                producer: "CARLMARTINS",
+                id: 1,
                 title: "1984",
                 album: "Led Line Tullinge",
                 year: 2017,
@@ -69,6 +71,7 @@ class Player extends Component {
         this.setState({ playStatus: status });
         setInterval(() => {
             this.updateTime();
+            this.updateBackground();
         }, 1000);
         // this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
     }
@@ -89,6 +92,15 @@ class Player extends Component {
             time = audio.currentTime;
             time = Math.floor(time);
         this.setState({ currentTime: time })
+    }
+
+    updateBackground = (percent) => {
+        let audio = document.querySelector('audio')        
+        let currentTime = audio.currentTime;
+        let duration = this.state.track.duration;
+        percent = (currentTime / duration) * 100 + '%';
+        let timestamps = document.querySelector('.timestamps-bkg');
+        timestamps.style['width'] = percent;
     }
 
 
@@ -125,15 +137,15 @@ class Player extends Component {
     render() {
         return (
 
-            <div className="Player">
-                <div className="overlay"></div>
-                <div className="Header"><div className="Title">Now playing</div></div>
-                <div className="Artwork" style={{ 'backgroundImage': 'url(' + this.state.track.artwork + ')' }}></div>
+            <div className="player">
+            <div className="overlay"></div>
+                
+                <div className="artwork" style={{ 'backgroundImage': 'url(' + this.state.track.artwork + ')' }}></div>
                 <Info track={this.state.track} />
-                <div className="Button" onClick={this.togglePlayPause}>
+                <div className="button" onClick={this.togglePlayPause}>
                     {this.state.playStatus === false ? "▶" : "⏸"}
                 </div>
-                <Time duration={Math.floor(this.state.track.duration  / 60) + ':' +  Math.floor(this.state.track.duration % 60)} currentTime={this.state.currentTime} />
+                <Time duration={Math.floor(this.state.track.duration  / 60) + ':' +  Math.floor(this.state.track.duration % 60 +1)} currentTime={this.state.currentTime} />
                 <audio id="audio"><source src={this.state.track.source} /> </audio>
             </div>
         )
