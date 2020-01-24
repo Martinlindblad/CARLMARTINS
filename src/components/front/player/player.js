@@ -12,8 +12,8 @@ class Player extends Component {
         this.state = {
             playStatus: false,
             currentTime: 0,
-            
-            
+
+
             track: {
                 producer: "CARLMARTINS",
                 id: 1,
@@ -56,16 +56,16 @@ class Player extends Component {
     }
 
     togglePlayPause() {
-        let status = this.state.playStatus;  
+        let status = this.state.playStatus;
         let time = this.state.currentTime;
-        let duration = this.state.track.duration   
+        let duration = this.state.track.duration
         let audio = document.getElementById('audio');
         if (status === false) {
             status = true; audio.play();
-        } else if( time === duration) {
+        } else if (time === duration) {
             status = false; audio.pause();
         }
-         else {
+        else {
             status = false; audio.pause();
         }
         this.setState({ playStatus: status });
@@ -87,15 +87,15 @@ class Player extends Component {
     //     }
     // }
     updateTime = (time) => {
-        
+
         let audio = document.getElementById('audio');
-            time = audio.currentTime;
-            time = Math.floor(time);
+        time = audio.currentTime;
+        time = Math.floor(time);
         this.setState({ currentTime: time })
     }
 
     updateBackground = (percent) => {
-        let audio = document.querySelector('audio')        
+        let audio = document.querySelector('audio')
         let currentTime = audio.currentTime;
         let duration = this.state.track.duration;
         percent = (currentTime / duration) * 100 + '%';
@@ -138,15 +138,17 @@ class Player extends Component {
         return (
 
             <div className="player">
-            <div className="overlay"></div>
-                
+                <div className="overlay"></div>
+                <h1 className="Artist">{this.state.track.producer}</h1>
                 <div className="artwork" style={{ 'backgroundImage': 'url(' + this.state.track.artwork + ')' }}></div>
+               <div className="track">
                 <Info track={this.state.track} />
+                <Time duration={Math.floor(this.state.track.duration / 60) + ':' + Math.floor(this.state.track.duration % 60 + 1)} currentTime={this.state.currentTime} />
+               </div>
+                <audio id="audio"><source src={this.state.track.source} /> </audio>
                 <div className="button" onClick={this.togglePlayPause}>
                     {this.state.playStatus === false ? "▶" : "⏸"}
                 </div>
-                <Time duration={Math.floor(this.state.track.duration  / 60) + ':' +  Math.floor(this.state.track.duration % 60 +1)} currentTime={this.state.currentTime} />
-                <audio id="audio"><source src={this.state.track.source} /> </audio>
             </div>
         )
     }
