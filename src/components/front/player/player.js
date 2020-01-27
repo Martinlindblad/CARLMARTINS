@@ -12,8 +12,6 @@ class Player extends Component {
         this.state = {
             playStatus: false,
             currentTime: 0,
-
-
             track: {
                 producer: "CARLMARTINS",
                 id: 1,

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Player from "./player/player"
+import Tracks from "./tracks/tracks"
 
 class Hero extends Component{
     constructor() {
@@ -16,6 +17,7 @@ class Hero extends Component{
           return (
               <div className="front">
                   <Player />
+                  <Tracks />
               </div>
           )
       }

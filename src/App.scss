@@ -44,11 +44,13 @@ p, h1, h2, h3, span, button, div{
 ////__________________________________
 
 .container{
+  margin: 0;
+  overflow: hidden;
+  opacity: 1;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
-  opacity: 1;
+  position: relative;
+  
   .overlay{
     background-color: black;
     background: linear-gradient(50deg,#332530, #E903B4, #80677A 80.71%);

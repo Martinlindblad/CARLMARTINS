@@ -38,12 +38,15 @@ $title: #FFCDF4;
 }
 
 .player{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%; 
     grid-template-rows: 20% 20% 20% 20% 20%; 
+    overflow: hidden;
+    z-index: 4;
+
     .artwork{
         height: 120px;
         width: 120px;
@@ -72,7 +75,9 @@ $title: #FFCDF4;
         cursor: pointer;
         &:hover{
             cursor: pointer;
-            
+            .player{
+                z-index: 500;
+            }
         }
     }
     
