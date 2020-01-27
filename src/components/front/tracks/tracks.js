@@ -53,9 +53,9 @@ class Tracks extends Component {
         return (
 
             <div className="tracks-container">
-                {this.state.tracks.map((track) => {
+                {this.state.tracks.map((track, i) => {
                     return (
-                        <div className={track.track} style={{ 'backgroundImage': 'url(' + track.artwork + ')' }}>
+                        <div key={i} className={track.track} style={{ 'backgroundImage': 'url(' + track.artwork + ')' }}>
                             <h2 className="Artist">{track.title}</h2>
                             <div className="track-info">
                                 <h3>{track.album}</h3>
